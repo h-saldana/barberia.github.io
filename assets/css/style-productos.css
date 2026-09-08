@@ -16,7 +16,17 @@
 width: 940px;
 position: relative;
 margin: 0 auto;
+display: flex;
+justify-content: space-between;
+
 }
+
+
+
+/* .navegacion{
+    
+   
+} */
 
 .productos{
     display: flex;
@@ -108,6 +118,13 @@ ul{
         display: block;
         width: 100%;    
         
+    }
+
+    main{
+    
+    
+    position: relative;
+    right: 13px;
     }
 
     .productos{

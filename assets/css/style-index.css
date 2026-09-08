@@ -14,13 +14,16 @@ margin: 0 auto;
 
 }
 
-nav{
+/* nav{
 
     position:absolute;
     top:110px;
     right:0px; 
 
 }
+
+
+
 nav li{    
     display: inline;
     margin: 0 0 0 15px;
@@ -33,13 +36,50 @@ nav a{
     font-weight: bold;
     font-size: 22px;
     text-decoration: none;
-}
+} */
 
 nav a:hover{
 
     color: #c78c19;
     text-decoration: underline;
 }
+
+/* ******************codigo de prueba ************/
+
+/* Estilos base */
+.nav {
+    /* position: relative; */
+    position:absolute;
+    top:110px;
+    right:0px;
+}
+
+.navegacion {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.navegacion li a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 28px;
+    color:#000000;
+}
+
+/* Botón hamburguesa oculto en desktop */
+.menu-btn {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Checkbox oculto */
+.menu-toggle {
+    display: none;
+}
+/* ******************************************** */
 .productos{
 
     width: 940px;
@@ -310,7 +350,7 @@ p:first-line{
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    
     
     
 }
@@ -324,6 +364,7 @@ p:first-line{
 
 /* queda pendiente ajustar el video */
 @media screen and (max-width:480px){
+  
     h1{
         text-align: center;
     
@@ -332,6 +373,32 @@ p:first-line{
     nav{
         position: static;
     }
+
+    /* ***********codigo de prueba********* */
+
+     .menu-btn {
+        display: block;
+        border: 2px red;
+    }
+
+    .navegacion {
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: #fff;
+        flex-direction: column;
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        display: none;
+    }
+
+    /* Cuando el checkbox está activo, se despliega el menú */
+    .menu-toggle:checked ~ .navegacion {
+        display: flex;
+    }
+
+    /* ************************************ */
 
     header{
         width: 100%;
@@ -345,6 +412,64 @@ p:first-line{
     .lista-diferenciales, .imagen-diferenciales{
         width: 100%;
     }
+    
+    /* .formulario{
+        background-color: #088c19;
+        margin: 0 50px 0 50px;
+    }
+
+    form{
+        margin:0 50px 0 50px;
+    }
+        .formulario {
+        flex-direction: column;
+        padding: 10px;
+    } */
+
+    form,
+    .tabla {
+        width: 95%;
+    }
+    .input-padron{
+       width: 85%;
+    }
+
+    textarea {
+        width: 98%;
+    }
+
+    .enviar{ 
+        
+        /* padding-left: 1px; */
+        /* padding-right: 20px; */
+        position: relative;
+        left: 40px;        
+        width: 75%;
+    }
+
+    .tabla{
+        /* 
+        display: block;        
+        justify-content: center; */
+        /* background-color: red; */
+        width: 54%;
+        position: relative;
+        left: 2px;
+
+    }
+
+    /* .enviar {
+    width: 100%;
+    padding: 12px;
+    background-color: #088c19;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    } */
+
 }
 
 
