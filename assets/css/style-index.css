@@ -130,14 +130,7 @@ nav a:hover{
 .productos li:hover h2{
     font-size: 33px;
 }
-/* código del footer */
 
-footer{
-
-    text-align: center;
-    background: url(assets/img/productos/bg.jpg);
-    padding:40px;
-}
 
 .copyright{
      color: #FFFFFF;
@@ -362,7 +355,14 @@ p:first-line{
         display:block;
 }
 
+/* código del footer */
 
+footer{
+
+    text-align: center;
+    background: url(/assets/img/productos/bg.jpg);
+    padding:40px;
+}
 /* queda pendiente ajustar el video */
 @media screen and (max-width:480px){
   
