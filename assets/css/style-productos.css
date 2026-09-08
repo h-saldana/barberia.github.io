@@ -112,6 +112,12 @@ ul{
 
 }
 
+footer{
+
+    text-align: center;
+    background: url(/barberia.github.io/assets/img/productos/bg.jpg);
+    padding:40px;
+}
 
 @media screen and (max-width:480px){
     .caja{        
