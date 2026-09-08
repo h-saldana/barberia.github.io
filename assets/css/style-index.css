@@ -360,7 +360,7 @@ p:first-line{
 footer{
 
     text-align: center;
-    background: url(../img/productos/bg.jpg);
+    background: url(/barberia.github.io/assets/img/productos/bg.jpg);
     padding:40px;
 }
 /* queda pendiente ajustar el video */
